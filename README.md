@@ -66,5 +66,8 @@ python agent.py "Send email to test@example.com saying Hello" --provider gmail
 
 - Non-headless mode for manual login due to security.
 - Tested on Windows 11, Python 3.12.
+- Uses `undetected-playwright` to bypass Gmail's "This browser may not be secure" error.
+- Handles passkey prompts and URL variations with extended timeouts and selector checks.
+- Manual login required; session saved to `auth_state.json` (excluded from repo).
 
 Author: Ayomide Ayodele-Soyebo
